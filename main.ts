@@ -2,7 +2,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
         mySprite.vy += -175
         music.play(music.melodyPlayable(music.jumpUp), music.PlaybackMode.UntilDone)
-        scene.cameraShake(2, 500)
+        scene.cameraShake(1.5, 500)
     }
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.collectibleInsignia, function (sprite, location) {
